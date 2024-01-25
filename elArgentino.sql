@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS ventas (
 id_venta INT UNSIGNED KEY AUTO_INCREMENT NOT NULL,
 fecha DATE NOT NULL,
 descuento INT 
-)
+);
 
 -- tabla productos
 CREATE TABLE IF NOT EXISTS productos(
@@ -40,9 +40,12 @@ NAME VARCHAR(50) UNIQUE NOT NULL,
 precio_venta INT UNSIGNED NOT NULL,
 descripcion VARCHAR(100),
 stock INT UNSIGNED,
+stock_minimo int unsigned,
+se_pide boolean,
+codigo_barra varchar(250),
 id_precio_costo INT UNSIGNED,
 FOREIGN KEY (id_producto) REFERENCES proveedor (id_proveedor)
-)
+);
 
 
 
@@ -53,7 +56,7 @@ id_proveedor INT UNSIGNED KEY AUTO_INCREMENT NOT NULL,
 NAME VARCHAR(50) NOT NULL,
 precio_costo INT UNSIGNED NOT NULL, 
 id_producto INT UNSIGNED 
-)
+);
 
 
 
@@ -61,7 +64,7 @@ id_producto INT UNSIGNED
 CREATE TABLE IF NOT EXISTS compras(
 id_compras INT UNSIGNED KEY AUTO_INCREMENT NOT NULL,
 fecha DATE
-)
+);
 
 -- creando muchas compras a muchos productos
 CREATE TABLE IF NOT EXISTS compras_productos(
@@ -70,7 +73,7 @@ id_producto INT UNSIGNED NOT NULL,
 cantidad INT UNSIGNED NOT NULL,
 FOREIGN KEY (id_compras) REFERENCES compras (id_compras),
 FOREIGN KEY (id_producto) REFERENCES productos (id_producto) 
-)
+);
 
 
 
@@ -79,7 +82,7 @@ CREATE TABLE IF NOT EXISTs ventas(
 id_ventas INT UNSIGNED KEY AUTO_INCREMENT NOT NULL,
 fecha DATE NOT null,
 descuento int
-)
+);
 
 -- creando tabla ventas
 CREATE TABLE IF NOT EXISTS ventas_productos(
@@ -88,7 +91,7 @@ id_producto INT UNSIGNED NOT NULL,
 cantidad INT UNSIGNED NOT NULL,
 FOREIGN KEY (id_ventas) REFERENCES ventas (id_ventas),
 FOREIGN KEY (id_producto) REFERENCES productos (id_producto) 
-)
+);
 
 
 

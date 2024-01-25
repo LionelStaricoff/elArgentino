@@ -1,0 +1,3 @@
+1)_ Verificar que al realizar una venta el retornar luego del insert una lista con los productos que tengan stock negativo y avisar al usuario.
+2)_ venta de productos hora/dia/mes/año.
+3)_ armar 2 bbdd para los productos que tengan stock negativo y el que no los tenga
