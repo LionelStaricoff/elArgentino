@@ -1,3 +1,16 @@
 1)_ Verificar que al realizar una venta el retornar luego del insert una lista con los productos que tengan stock negativo y avisar al usuario.
+
 2)_ venta de productos hora/dia/mes/año.
-3)_ armar 2 bbdd para los productos que tengan stock negativo y el que no los tenga
+
+3)_ armar 2 bbdd para los productos que tengan stock negativo y el que no los tenga.
+
+4)_ front: 
+ a)_spring con javaFX.  encontre una pagina que convierte los jar de javaFx en android:
+https://gluonhq.com/products/scene-builder/
+
+ b)_Liv gdx : una librería realizada para juegos pero se puede crear cualquier app con java y exporta todo tipo de formatos.
+
+c)_ Vaadin: me llamo mucho la atención está librería porque puede exportar a pwa y tiene galería de componentes
+ Utiliza fusión. Front con typescript
+ https://youtu.be/zN2O3QW2jXM?si=LiAYy344CZPIr_Yf
+Tiene otra característica específica que es de tener la app funcionando ofline, Osea que cuando no tenes internet igualmente guarda en caché los datos.
