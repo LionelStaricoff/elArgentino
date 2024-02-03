@@ -14,3 +14,28 @@ c)_ Vaadin: me llamo mucho la atención está librería porque puede exportar a 
  Utiliza fusión. Front con typescript
  https://youtu.be/zN2O3QW2jXM?si=LiAYy344CZPIr_Yf
 Tiene otra característica específica que es de tener la app funcionando ofline, Osea que cuando no tenes internet igualmente guarda en caché los datos.
+
+
+5)_ crear modulos : 
+pedios y el de consultas de ventas.
+
+
+6)_ actualizar el programa:
+[30/1 20:13] El Argentino: https://youtu.be/ZT5vTaov9NY?si=5ZJ6kZ1xtY5RgLSB
+[30/1 20:17] El Argentino: Para crear un botón en Java que verifique si hay una versión actualizada de la aplicación instalada y, si la hay, que la actualice, puedes seguir los siguientes pasos:
+
+Primero, debes crear un botón en Java que tenga una acción asociada. Puedes hacer esto utilizando la clase JButton de Java Swing. Aquí hay un ejemplo de cómo crear un botón en Java:
+[30/1 20:17] El Argentino: JButton button = new JButton("Verificar actualizaciones");
+button.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e) {
+        // Aquí es donde se verificará si hay una versión actualizada de la aplicación instalada
+    }
+});
+[30/1 20:17] El Argentino: Luego, debes verificar si hay una versión actualizada de la aplicación instalada. Puedes hacer esto utilizando una biblioteca de actualización de software de terceros, como AppUpdater o Autoupdate4j. Estas bibliotecas te permiten verificar si hay una versión actualizada de la aplicación disponible y descargarla automáticamente si es necesario.
+
+Finalmente, debes actualizar la aplicación si hay una versión disponible. Puedes hacer esto utilizando la biblioteca de actualización de software que elegiste en el paso anterior. Aquí hay un ejemplo de cómo actualizar la aplicación utilizando la biblioteca AppUpdater:
+[30/1 20:17] El Argentino: AppUpdater appUpdater = new AppUpdater();
+appUpdater.setUpdateURL("http://www.example.com/update.xml");
+appUpdater.setDisplayErrorMessage(false);
+appUpdater.setCheckTime(1, TimeUnit.DAYS);
+appUpdater.start();
