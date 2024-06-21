@@ -15,7 +15,7 @@
 | Lionel | Gladys | Agustin |
 | 'Lyon' | <img src= "proyecto/img/MiLogo-verde-svg.svg" width="80px"> | 'Agus' |
 | Staricoff | Romero | MolMoldavsky|
-<a href="https://github.com/lionelStaricoff"> <img src="proyecto/img/github.svg"  width="70px"></a> | <a href="https://github.com/gladys007"><img src="proyecto/img/github.svg"  width="70px"></a> | <a href="https://github.com/luma2001"><img src="proyecto/img/github.svg"  width="70px"></a> ||
-<a href="https://www.linkedin.com/in/lionel-staricoff/" rel="nofollow"><img src="proyecto/img/linkedin.svg" width="70px"></a> | <a href="https://magicode-webpersonal.netlify.app">WebPersonal</a> | <a href="https://github.com/AgustinMolda/AgustinMolda" rel="nofollow"><img src="proyecto/img/linkedin.svg" width="70px"></a> 
+<a href="https://github.com/lionelStaricoff"> <img src="proyecto/img/github.svg"  width="70px"></a> | <a href="https://github.com/gladys007"><img src="proyecto/img/github.svg"  width="70px"></a> | <a href="https://github.com/AgustinMolda"><img src="proyecto/img/github.svg"  width="70px"></a> ||
+<a href="https://www.linkedin.com/in/lionel-staricoff/" rel="nofollow"><img src="proyecto/img/linkedin.svg" width="70px"></a> | <a href="https://magicode-webpersonal.netlify.app">WebPersonal</a> | <a href="https://www.linkedin.com/in/agust%C3%ADn-moldavsky-rodoni-b8112b163/" rel="nofollow"><img src="proyecto/img/linkedin.svg" width="70px"></a> 
 
 </div>
