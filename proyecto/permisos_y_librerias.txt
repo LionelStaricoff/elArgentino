@@ -1,0 +1,27 @@
+--------------------------permisos:---------
+admin
+
+ventas:
+vender
+ movimientos del dia
+ventas por persona
+ventas por producto
+ventas por fecha
+
+stock:(cambiar el nombre por productos de la pestaña stock)
+cargar stock:{ carga por producto, cargar por remito}
+ver stock :{stock, bajo_stock, sin_moviientos}
+modificar producto
+nuevo producto
+ver próximo pedido
+eliminar producto
+
+perfiles:
+nuevo perfil
+editar perfil
+
+
+-------------------librerías:------------
+crear pdf
+conexión whatsApp
+conexión email

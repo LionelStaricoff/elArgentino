@@ -1,0 +1,70 @@
+Para crear y llamar hilos en Java, puedes utilizar la clase Thread o implementar la interfaz Runnable. Aquí te muestro un ejemplo básico utilizando la interfaz Runnable:
+
+java
+public class MiTarea implements Runnable {
+    @Override
+    public void run() {
+        // Coloca aquí el código que necesitas ejecutar en el hilo
+    }
+}
+
+// Para llamar la tarea en un hilo separado
+MiTarea tarea = new MiTarea();
+Thread miHilo = new Thread(tarea);
+miHilo.start(); // Esto iniciará la ejecución de la tarea en un hilo separado
+
+
+En el ejemplo, creamos una clase llamada MiTarea que implementa la interfaz Runnable. Luego creamos una instancia de esta clase y la pasamos como argumento al constructor de Thread. Finalmente, llamamos al método start() en el objeto Thread para iniciar la ejecución de la tarea en un hilo separado.
+
+Cuando necesites actualizar una vista o ejecutar un controlador desde un hilo separado, puedes colocar el código correspondiente dentro del método run() de la clase que implementa Runnable.
+
+
+
+
+
+
+
+
+Cuando necesitas ejecutar algo desde la vista que requiere esperar datos para cargarlos en la vista, puedes utilizar herramientas como Platform.runLater() en JavaFX para asegurarte de que el código se ejecute en el hilo de la interfaz de usuario.
+
+Aquí te muestro un ejemplo de cómo usar Platform.runLater() para actualizar la vista desde un hilo separado:
+
+java
+// Supongamos que estamos en un hilo separado y necesitamos actualizar la vista
+Platform.runLater(() -> {
+    // Coloca aquí el código para actualizar la vista o ejecutar el controlador
+});
+
+
+Al llamar a Platform.runLater(), el código que coloques dentro del lambda se ejecutará en el hilo de la interfaz de usuario, permitiéndote actualizar la vista de forma segura.
+
+Esta técnica es útil cuando necesitas sincronizar la actualización de la vista con la disponibilidad de datos en un hilo separado.
+
+
+
+
+
+
+
+
+                                                                   java:
+
+// Supongamos que tienes un botón llamado "cargarProductosButton" en tu interfaz
+
+cargarProductosButton.setOnAction(event -> {
+    // Iniciar la carga de productos en un hilo separado
+    Thread thread = new Thread(() -> {
+        // Simulando la carga de datos desde una fuente externa
+        List<Producto> listaDeProductos = obtenerProductosDesdeFuenteExterna();
+
+        // Una vez que los datos estén disponibles, actualiza la vista usando Platform.runLater()
+        Platform.runLater(() -> {
+            // Actualiza la vista con la lista de productos
+            mostrarProductosEnLaVista(listaDeProductos);
+        });
+    });
+    thread.start(); // Iniciar el hilo para cargar los productos
+});
+
+
+En este ejemplo, al tocar el botón "cargarProductosButton", se inicia un nuevo hilo para cargar los productos desde una fuente externa. Una vez que los datos estén disponibles, se utiliza Platform.runLater() para actualizar la vista con la lista de productos.
